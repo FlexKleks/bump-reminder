@@ -95,18 +95,16 @@ Can be forced globally with `"language": "xx"` in config.
 
 ---
 
-## 💡 Ignore this
-
-- Keywords:
-  - `discord`
-  - `discord-bot`
-  - `bump`
-  - `reminder`
-  - `slash-command`
-  - `multi-language`
-
----
-
 ## 📄 License
 
 MIT © 2025 FlexKleks
+
+
+---
+
+## 🏷️ GitHub Topics
+
+These are the recommended topics to help others discover this project:
+
+`discord` ‧ `discord-bot` ‧ `discordjs` ‧ `bump` ‧ `reminder` ‧ `slash-commands`  
+`multi-language` ‧ `nodejs` ‧ `javascript` ‧ `open-source`
