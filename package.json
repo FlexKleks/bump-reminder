@@ -1,0 +1,22 @@
+{
+  "name": "bump-reminder-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that reminds users to /bump the server every 2 hours.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "bump",
+    "reminder"
+  ],
+  "author": "YourName",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1"
+  }
+}

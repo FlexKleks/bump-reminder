@@ -1,0 +1,94 @@
+{
+  "clientId": "YOUR_APPLICATION_CLIENT_ID",
+  "guildId": "THE_SERVER_ID_WHERE_COMMANDS_ARE_REGISTERED",
+  "channelId": "ID_OF_THE_CHANNEL_WHERE_REMINDERS_ARE_SENT",
+  "roleId": "ROLE_ID_TO_MENTION_OR_TOGGLE",
+  "ownerId": "YOUR_DISCORD_USER_ID (ONLY YOU CAN USE /task)",
+
+  "language": "",
+  "_language_desc": "Optional: Force specific language (e.g. 'en', 'de', 'fr', 'es'); leave empty for auto detection",
+
+  "allowedBotIds": [
+    "302050872383242240",
+    "123456789012345678",
+    "987654321098765432"
+  ],
+  "_allowedBotIds_desc": "List of bot IDs allowed to trigger /bump reminders",
+
+  "allowedChannelId": "OPTIONAL_CHANNEL_ID_TO_LIMIT_BUMP_COMMANDS",
+  "_allowedChannelId_desc": "Only accept /bump if sent in this specific channel (optional)",
+
+  "showButton": true,
+  "_showButton_desc": "Set to false to hide the toggle reminder button in embeds",
+
+  "mentionRole": true,
+  "_mentionRole_desc": "Set to false to suppress role mention in the reminder message",
+
+  "texts_en": {
+    "embedTitle": "🔔 Bump Reminder",
+    "embedDescription": "It's time to bump the server again!\n> `/bump`",
+    "buttonLabel": "🔔 Toggle Reminder",
+    "roleDisabled": "⚠️ Reminder role is currently disabled and cannot be changed.",
+    "roleAdded": "🔔 You are now receiving bump reminders.",
+    "roleRemoved": "🔕 You have disabled bump reminders.",
+    "roleNotFound": "❌ Reminder role not found.",
+    "roleChangeError": "⚠️ Error while changing role.",
+    "taskNoPermission": "🚫 You are not allowed to use this command.",
+    "taskStatusNone": "ℹ️ No active reminder.",
+    "taskStatusText": "🕒 Reminder in **{minutes}m {seconds}s**",
+    "taskCanceled": "❌ Reminder has been cancelled.",
+    "taskAlreadyCanceled": "ℹ️ No active reminder.",
+    "taskTestStart": "✅ Test reminder will be sent in **1 minute**."
+  },
+
+  "texts_de": {
+    "embedTitle": "🔔 Bump-Erinnerung",
+    "embedDescription": "Es ist Zeit für einen erneuten Server-Bump!\n> `/bump`",
+    "buttonLabel": "🔔 Reminder an/aus",
+    "roleDisabled": "⚠️ Die Reminderrolle ist deaktiviert und kann nicht geändert werden.",
+    "roleAdded": "🔔 Du bekommst nun Bump-Erinnerungen.",
+    "roleRemoved": "🔕 Du hast Bump-Erinnerungen deaktiviert.",
+    "roleNotFound": "❌ Die Reminderrolle wurde nicht gefunden.",
+    "roleChangeError": "⚠️ Fehler beim Rollenwechsel.",
+    "taskNoPermission": "🚫 Du darfst diesen Befehl nicht ausführen.",
+    "taskStatusNone": "ℹ️ Es ist kein Reminder aktiv.",
+    "taskStatusText": "🕒 Nächste Erinnerung in **{minutes}m {seconds}s**",
+    "taskCanceled": "❌ Die Erinnerung wurde abgebrochen.",
+    "taskAlreadyCanceled": "ℹ️ Aktuell läuft kein Reminder.",
+    "taskTestStart": "✅ Test-Reminder wird in **1 Minute** gesendet."
+  },
+
+  "texts_fr": {
+    "embedTitle": "🔔 Rappel de bump",
+    "embedDescription": "Il est temps de bumper le serveur !\n> `/bump`",
+    "buttonLabel": "🔔 Activer/Désactiver le rappel",
+    "roleDisabled": "⚠️ Le rôle de rappel est désactivé et ne peut pas être modifié.",
+    "roleAdded": "🔔 Vous recevrez maintenant des rappels de bump.",
+    "roleRemoved": "🔕 Vous avez désactivé les rappels.",
+    "roleNotFound": "❌ Rôle de rappel introuvable.",
+    "roleChangeError": "⚠️ Erreur lors de la modification du rôle.",
+    "taskNoPermission": "🚫 Vous n’êtes pas autorisé à utiliser cette commande.",
+    "taskStatusNone": "ℹ️ Aucun rappel actif pour le moment.",
+    "taskStatusText": "🕒 Rappel dans **{minutes}m {seconds}s**",
+    "taskCanceled": "❌ Le rappel a été annulé.",
+    "taskAlreadyCanceled": "ℹ️ Aucun rappel actif actuellement.",
+    "taskTestStart": "✅ Un rappel test sera envoyé dans **1 minute**."
+  },
+
+  "texts_es": {
+    "embedTitle": "🔔 Recordatorio de bump",
+    "embedDescription": "¡Es hora de hacer bump al servidor!\n> `/bump`",
+    "buttonLabel": "🔔 Activar/Desactivar recordatorio",
+    "roleDisabled": "⚠️ El rol de recordatorio está deshabilitado y no se puede cambiar.",
+    "roleAdded": "🔔 Ahora recibirás recordatorios de bump.",
+    "roleRemoved": "🔕 Has desactivado los recordatorios.",
+    "roleNotFound": "❌ Rol de recordatorio no encontrado.",
+    "roleChangeError": "⚠️ Error al cambiar el rol.",
+    "taskNoPermission": "🚫 No tienes permiso para usar este comando.",
+    "taskStatusNone": "ℹ️ No hay recordatorio activo actualmente.",
+    "taskStatusText": "🕒 Recordatorio en **{minutes}m {seconds}s**",
+    "taskCanceled": "❌ El recordatorio ha sido cancelado.",
+    "taskAlreadyCanceled": "ℹ️ No hay recordatorio activo.",
+    "taskTestStart": "✅ El recordatorio de prueba se enviará en **1 minuto**."
+  }
+}
