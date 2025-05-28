@@ -18,8 +18,8 @@ A Discord bot that watches for `/bump` commands from supported bots and sends a 
 ## 📦 Setup
 
 ```bash
-git clone https://github.com/yourname/bump-reminder-bot.git
-cd bump-reminder-bot
+git clone https://github.com/FlexKleks/bump-reminder.git
+cd bump-reminder
 npm install
 ```
 
