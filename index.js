@@ -13,6 +13,11 @@ import fs from 'fs/promises';
 import dotenv from 'dotenv';
 dotenv.config();
 
+if (!process.env.DISCORD_TOKEN) {
+  console.error("❌ Discord token is missing. Check your .env file.");
+  process.exit(1);
+}
+
 import { REST, Routes } from 'discord.js';
 
 const config = JSON.parse(
