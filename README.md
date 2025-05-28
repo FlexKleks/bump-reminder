@@ -1,21 +1,35 @@
 # 🔔 Discord Bump Reminder Bot
 
-A Discord bot that watches for `/bump` commands from supported bots and sends a reminder after 2 hours — with role mention and toggleable buttons.
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Node.js Version](https://img.shields.io/badge/node-18%2B-green.svg)
+![Discord.js Version](https://img.shields.io/badge/discord.js-v14.x-purple.svg)
+
+> A multilingual Discord bot that watches `/bump` commands (e.g. from Disboard) and reminds users after 2 hours. Includes role management, slash command control, and optional button toggles.
 
 ---
 
 ## 🚀 Features
 
-- Detect `/bump` usage by other bots
-- Sends a reminder after 2 hours (or 1 min test mode)
-- Optional role mention + toggle button
-- Multi-language support (`en`, `de`, `fr`, `es`)
-- Slash command `/task` for control (`status`, `cancel`, `test`)
-- Language auto-detection or forced via config
+✅ Auto-detect `/bump` usage from allowed bots  
+⏰ Sends a reminder 2 hours later in a specific channel  
+🔁 Test mode for fast debugging (1-minute reminder)  
+🔔 Optional role mention and toggle button  
+🌐 Multi-language support (`en`, `de`, `fr`, `es`)  
+🛠 Slash command `/task` with subactions: `status`, `cancel`, `test`  
+🔐 Owner-only command permissions  
+🧠 Language auto-detection or forced via config
+
+---
+
+## 📸 Screenshot
+
+![Reminder Preview](https://i.imgur.com/V5u1ft5.png)
 
 ---
 
 ## 📦 Setup
+
+### 1. Clone & Install
 
 ```bash
 git clone https://github.com/FlexKleks/bump-reminder.git
@@ -25,26 +39,27 @@ npm install
 
 ---
 
-## ⚙️ Configuration
+### 2. Configuration
 
-1. **Set up the environment file**
-
-Copy `.env.example` and rename it:
+#### `.env`
 
 ```bash
 cp .env.example .env
 ```
 
-Then open `.env` and insert your Discord bot token:
+Then open `.env` and insert your bot token:
 
 ```env
-DISCORD_TOKEN=your_real_token_here
+DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
 ```
 
-2. **Edit `config.json`**
+#### `config.json`
 
-Set up your bot/client ID, guild ID, channel, roles, and other options.  
-Language-specific texts are included for `en`, `de`, `fr`, and `es`.
+Set your:
+- `clientId`, `guildId`, `channelId`, `roleId`, `ownerId`
+- Allowed bump bot IDs (e.g. Disboard)
+- Optional channel filter
+- Language: `"en"`, `"de"`, `"fr"`, `"es"` — or leave blank for auto
 
 ---
 
@@ -56,30 +71,42 @@ npm start
 
 ---
 
-## 🛠 Slash Commands
+## 🛠 Slash Command: `/task`
 
-| Command        | Action                          |
-|----------------|---------------------------------|
-| `/task status` | Show time until next reminder   |
-| `/task cancel` | Cancel the current reminder     |
-| `/task test`   | Sends a test reminder in 1 min  |
+| Action  | Description                   |
+|---------|-------------------------------|
+| status  | See time left until reminder |
+| cancel  | Cancel active reminder        |
+| test    | Send test reminder in 1 min   |
 
-> Only the `ownerId` in your config can use `/task`!
+> Only the owner (set in `config.json`) can use this command.
 
 ---
 
 ## 🌐 Language Support
 
-- Auto-detected per user (`interaction.locale`)
-- Or forced globally via `"language"` in `config.json`
-- Translations included:
-  - English 🇬🇧
-  - Deutsch 🇩🇪
-  - Français 🇫🇷
-  - Español 🇪🇸
+- English 🇬🇧
+- Deutsch 🇩🇪
+- Français 🇫🇷
+- Español 🇪🇸
+
+Auto-detects the user's Discord language.  
+Can be forced globally with `"language": "xx"` in config.
 
 ---
 
-## 🧾 License
+## 💡 Ignore this
 
-MIT
+- Keywords:
+  - `discord`
+  - `discord-bot`
+  - `bump`
+  - `reminder`
+  - `slash-command`
+  - `multi-language`
+
+---
+
+## 📄 License
+
+MIT © 2025 FlexKleks
