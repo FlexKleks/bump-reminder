@@ -1,7 +1,7 @@
 {
   "name": "bump-reminder-bot",
-  "version": "1.0.0",
-  "description": "A Discord JavaScript bot that reminds users to /bump the server every 2 hours.",
+  "version": "1.1.0",
+  "description": "A Discord JavaScript bot that reminds users to /bump the server at configurable intervals.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,18 +12,17 @@
     "bot",
     "bump",
     "reminder",
-    "discord",
-    "discord-bot",
-    "bump",
-    "reminder",
-    "slash-command",
-    "multi-language",
-    "discordjs"
+    "sqlite",
+    "winston",
+    "logging"
   ],
   "author": "FlexKleks",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "sqlite3": "^5.1.6",
+    "sqlite": "^4.1.2",
+    "winston": "^3.8.2"
   }
 }
